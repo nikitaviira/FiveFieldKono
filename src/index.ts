@@ -1,4 +1,5 @@
 import FiveFieldKono from "./gameLogic";
+import '../wwwroot/style.css';
 
 let gameObject: FiveFieldKono;
 const squareElement = document.getElementById("square") as HTMLElement;
