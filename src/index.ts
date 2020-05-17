@@ -30,7 +30,7 @@ window.onload = function () {
             return;
         }
     }
-    window.location.href = 'http://localhost:8090/';
+    window.location.href = '/';
 };
 
 function skipToNextColor(): void {
