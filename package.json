@@ -1,0 +1,19 @@
+{
+  "name": "icd0006-2019s",
+  "version": "1.0.0",
+  "description": "JS projects",
+  "main": "index.ts",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --progress --color"
+  },
+  "author": "niviir",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

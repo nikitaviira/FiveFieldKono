@@ -1,0 +1,103 @@
+.board {
+    background: black;
+    width: 560px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 660px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: black;
+    height: 130px;
+    width: 110px;
+    border: 1px solid white;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.highlight {
+    background-color: #3a694694;
+}
+
+html {
+    background: black;
+}
+
+.square {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.win {
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.skip {
+    user-select: none;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.topic {
+    color: white;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.options {
+    height: 20vw;
+    margin: 0 auto;
+    width: 20vw;
+    display: grid;
+}
+
+select {
+    border-radius: 5px;
+    height: 2vw;
+    margin-bottom: 1.5vw;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    width: 20vw;
+}
+
+button {
+    height: 2.5vw;
+    border: none;
+    width: 10vw;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, sans-serif;
+    background: #3dd20d;
+    margin: 4vw auto 0;
+}
+
+.label {
+    color: white;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.endbtn {
+    margin: 0 auto;
+    display: block;
+    width: 20vw;
+}

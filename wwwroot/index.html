@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>JS Test 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="topic">Five Field Kono</h1>
+<form class="options">
+    <p class="label">Choose game mode: </p>
+    <select id="gamemode">
+        <option value="pvc">Player vs Computer</option>
+        <option value="pvp">Player vs Player</option>
+        <option value="cvc">Computer vs Computer</option>
+    </select>
+
+    <p class="label">Choose starting color: </p>
+    <select id="startingcolor">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+    </select>
+    <button type="button" onclick="sendDataGamePage()">Start game</button>
+</form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    function sendDataGamePage() {
+        const gamemode = document.getElementById("gamemode");
+        const gamemodeValue = gamemode.options[gamemode.selectedIndex].value;
+
+        const startingColor = document.getElementById("startingcolor");
+        const startingColorValue = startingColor.options[startingColor.selectedIndex].value;
+
+        window.location.href = `fiveFieldKono.html?gmd=${gamemodeValue}&clr=${startingColorValue}`;
+    }
+</script>
